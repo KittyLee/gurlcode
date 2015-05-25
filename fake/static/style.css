@@ -1,0 +1,107 @@
+/* 
+    Theme Name: flat-bootstrap-Child
+	Template: flat-bootstrap
+*/
+
+/*GLOBAL CHANGES FOR ENTIRE SITE  START HERE*/
+
+/* Changing link color in entire site*/
+a { color: #800080; }
+/*optional change color of links when hover*/
+ a:hover, a:focus { color: #19B798; }
+
+/*navbar modifications*/
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #800080;
+    color: #fff !important;
+}
+
+/*navbar branding with logo*/ 
+ #navbar-brand {
+    <img alt="Brand" src="/http://gurhlcode.org/wp-content/uploads/340x340.jpg;">
+   }
+
+/* @todo adding image to sit in or behind? navbar 
+<a href="#" class="pull-left"><img src="/http://gurhlcode.org/wp-content/uploads/340x340.jpg"></a>
+*/
+
+/* Removing padding around Page Title*/
+header.content-header{
+	min-height: 17px;
+	background-image: src="/http://gurhlcode.org/wp-content/uploads/340x340.jpg");
+	background-repeat: no-repeat;
+ }	
+
+/* Set page header to purple */
+.content-header {
+	background-color: #800080;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+/*set header-container to have smaller container*/
+.container::after {
+	background-color: #fff;
+}
+
+/*adding margin to the randome quote area*/
+#sidebar-pagetop {margin-top:20px; }
+
+/* Originally set site credits to "not quite" black #222222*/
+.after-footer {
+	background: #800080;
+	color: white;
+	font-size: 16px;
+}
+#site-credits {display:none; }
+
+/*PAGES CSS START HERE*/
+button, input[type=submit] {background:#00C8D7; }
+
+/*Text with an Expert Page Changes*/
+#planned-parenthood-mobile-chat-button {display:none; }
+#LP_DIV_1360081481557 {display:block; 
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+ } 
+
+@media (max-width: 480px) { 
+  #planned-parenthood-mobile-chat-button {display:block; }
+
+  #LP_DIV_1360081481557 {display:none;  }
+
+
+/*clinic search page CSS*/
+#find-nearby-button {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+#zipcodeinput{
+    margin-bottom: 10px;
+    padding-top: 1px;
+}
+#radiusradiobtn {
+ 	  margin-left: 20px;
+  	padding-bottom: 5px;
+}
+/*add padding to bedsider image at bottom of clinic search page*/
+#wp-image-4281 {
+    padding-top: 30px; 
+}
+#gobtn {
+  padding-bottom: 30px;
+}
+#bedsider-search-result-item-phone {
+  	padding-left: 16px;
+  /*background: url() left no-repeat /*auto-sizing if needed*/;
+}
+
+
+/*phamplet-page styles*/
+#phamplet-play-pause {
+	position: fixed; 
+	z-index:1000; 
+	width:100%; 
+	bottom: 0;
+	background-color: #800080;
+}
